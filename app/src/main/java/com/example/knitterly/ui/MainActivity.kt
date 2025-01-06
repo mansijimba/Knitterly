@@ -1,10 +1,11 @@
-package com.example.knitterly
+package com.example.knitterly.ui
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.knitterly.R
 import com.example.knitterly.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
