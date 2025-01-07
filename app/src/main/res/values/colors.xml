@@ -5,4 +5,14 @@
     <color name="grey">#757373</color>
     <color name="blue">#5E949C</color>
     <color name="darkblue">#44588A</color>
+    <color name="Green">#61838D</color>
+    <color name="Lightgreen">#BEDCDA</color>
+    <color name="LightBlue">#A2ADC3</color>
+    <color name="Lavender">#E6E5ED</color>
+    <color name="LightLavender">#F9F8FE</color>
+    <color name="Red">#E91E25</color>
+    <color name="lightbrown">#9CEA976A</color>
+    <color name="creambrown">#CC8D63</color>
+    <color name="darkbrown">#E18E4710</color>
+    <color name="pink">#F88379</color>
 </resources>
