@@ -8,6 +8,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.knitterly.R
+import com.example.knitterly.Repository.AuthRepoImpl
+import com.example.knitterly.Utils.LoadingUtils
+import com.example.knitterly.ViewModel.AuthViewModel
 import com.example.knitterly.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
@@ -19,17 +22,17 @@ class LoginActivity : AppCompatActivity() {
         enableEdgeToEdge()
         loginBinding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(loginBinding.root)
+
         loadingUtils = LoadingUtils(this)
 
-        setContentView(R.layout.activity_login)
         val repo = AuthRepoImpl()
         authViewModel = AuthViewModel(repo)
 
-        loginBinding.butLogin.setOnClickListener {
+        loginBinding.butlogin.setOnClickListener {
             login()
         }
         loginBinding.signUp.setOnClickListener {
-            var intent = Intent(this@LoginActivity, SignUpActivity::class.java)
+            var intent = Intent(this@LoginActivity, SignupActivity::class.java)
             startActivity(intent)
         }
         loginBinding.forgetPassword.setOnClickListener {
@@ -46,9 +49,9 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(applicationContext, message, Toast.LENGTH_LONG).show()
                 loadingUtils.dismiss()
 
-                intent = Intent(this@LoginActivity, DashboardActivity::class.java)
-                startActivity(intent)
-                finish()
+//                intent = Intent(this@LoginActivity, DashboardActivity::class.java)
+//                startActivity(intent)
+//                finish()
             } else {
                 Toast.makeText(applicationContext, message, Toast.LENGTH_LONG).show()
                 loadingUtils.dismiss()

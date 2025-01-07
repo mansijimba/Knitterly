@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "616067566040",
+    "firebase_url": "https://knitterlyy-default-rtdb.firebaseio.com",
+    "project_id": "knitterlyy",
+    "storage_bucket": "knitterlyy.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616067566040:android:b7cf2d021d5ad54fdf4aad",
+        "android_client_info": {
+          "package_name": "com.example.knitterly"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBSQZJeolvSlu_o8WtPujdY9aRcgl8gBKU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
